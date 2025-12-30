@@ -3,14 +3,8 @@
 #include <list>
 #include <unordered_map>
 
-enum class Side { Buy, Sell };
+#include "Order.h"
 
-struct Order {
-    uint64_t id;
-    double price;
-    uint32_t quantity;
-    Side side;
-};
 
 struct LimitLevel {
     double price;
@@ -32,4 +26,5 @@ public:
     void addOrder(Order order);
     void match(); // The "Break of Structure" logic
     void cancelOrder(uint64_t orderId);
+    void display();
 };
