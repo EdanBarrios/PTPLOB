@@ -1,6 +1,8 @@
 #ifndef ORDER_H
 #define ORDER_H
+
 #include <cstdint>
+#include <iostream>
 
 enum class Side { Buy, Sell };
 
